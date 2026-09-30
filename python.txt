@@ -1,0 +1,6 @@
+$url = "https://raw.githubusercontent.com/gitMhbys/asd/refs/heads/main/python.txt"
+$file = "$env:TEMP\python_setup.txt"
+
+Invoke-WebRequest -Uri $url -OutFile $file
+
+notepad $file
